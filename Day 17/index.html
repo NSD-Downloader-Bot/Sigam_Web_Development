@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selector</title>
+    <style>
+        /* this is a selector*/
+        div {
+            /* background-color: red;*/
+        }
+
+        /*class selector */
+        .red {
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        /*id selector*/
+        #green {
+            background-color: greenyellow;
+        }
+
+        /*child selector */
+        div>p {
+            color: blue;
+            background-color: red;
+        }
+
+        /*descendent selector*/
+        div p {
+            color: blue;
+            background-color: red;
+        }
+
+        /*universal selector*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*pseudo selentor*/
+        a:visited{
+            color: yellow;
+        }
+
+        a:link{
+            color: greenyellow;
+        }
+
+        a:active{
+            background-color: black;
+        }
+
+        a:hover{
+            background-color: red;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="one">
+        <p>
+            dog can bark
+        </p>
+        <p>
+            MY NAME IS DEVANSH SIGNH
+        </p>
+        </div>
+
+    <div class="red">I am a div
+        <p>i am paragraph in a div</p>
+    </div>
+
+    <div id="green">Dog is a best policy</div>
+
+    <div>
+
+        <article>
+            <p>Iam in article paragraph div</p>
+        </article>
+
+    </div>
+
+    <div>
+        <a target="_blank" href="https://www.google.com">Go to goggle</a>
+        <a target="_blank" href="https://www.facebook.com">Go to facebook</a>
+        <a target="_blank" href="https://www.codewithharry.com">Go to codewithharry</a>
+    </div>
+
+
+</body>
+
+</html>

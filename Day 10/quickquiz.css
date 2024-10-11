@@ -1,0 +1,22 @@
+.headings{
+    color:whitesmoke;
+    display: grid;
+    place-items: center;
+    background-color: rgb(23, 1, 45);
+}
+
+.dark{
+    color-scheme: dark;
+ }
+
+ .catogary{
+    color:whitesmoke;
+    
+    background-color: rgb(32, 19, 44);
+ }
+
+ .Music{
+    color:whitesmoke;
+    
+    background-color: rgb(32, 19, 44);
+ }
