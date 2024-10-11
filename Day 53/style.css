@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+.bg{
+    height: 90vh;
+    width: 98.5vw;
+    opacity: 0.49;
+}
+
+.logo{
+    color: red;
+    fill: currentColor;
+    height: 9vh;
+    width: 13vw;
+    position: relative;
+    left: 10vw;
+    top: 2vh;
+}
+
+
+nav{
+    position: relative;
+    top: -90vh;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* Styles for screens up to 768px wide (e.g., mobile devices) */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for screens between 769px and 1024px wide (e.g., tablets) */
+}
+
+@media screen and (min-width: 1025px) {
+    /* Styles for screens wider than 1024px (e.g., desktops) */
+}

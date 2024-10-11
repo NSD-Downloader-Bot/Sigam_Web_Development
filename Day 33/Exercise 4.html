@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Exercise 4</title>
+
+    <style>
+        
+        body {
+            background-color: #333333;
+        }
+
+        .top {
+            --tw-bg-opacity: 1;
+            background-color: rgb(31 41 55/var(--tw-bg-opacity));
+            border: 2px solid #333333;
+            height: 100px;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .Title {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40px;
+            font-weight: 600;
+            --tw-text-opacity: 1;
+            color: rgb(216 180 254/var(--tw-text-opacity));
+            padding: 20px;
+
+        }
+
+        .navdiv {
+            display: flex;
+            display: inline-block;
+        }
+
+        .navul {
+            display: flex;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .navli {
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        .navlink {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: 300;
+            position: relative;
+            left: 1200px;
+            transition: transform 0.2s, border-bottom 0.2s;
+            font-family: inherit;
+        }
+
+        .navlink:hover {
+            box-sizing: border-box;
+            border: 2px;
+            transform: translateY(-2px);
+            /* Move the text up slightly on hover */
+            --tw-text-opacity: 2;
+
+            border-bottom: 2px solid rgb(216 180 254/var(--tw-text-opacity));
+        }
+
+        .login {
+            --tw-bg-opacity: 1;
+            background-color: rgb(168 85 247/var(--tw-bg-opacity));
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255/var(--tw-text-opacity));
+            font-family: Poppins, sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 12px;
+            position: relative;
+            left: 1190px;
+            top: -7px;
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-bottom: 7px;
+            padding-top: 7px;
+
+
+
+        }
+
+        .darkhorizontalline {
+            --tw-border-opacity: 1;
+            border-color: rgb(107 114 128/var(--tw-border-opacity));
+            height: 0;
+            color: inherit;
+            border-top-width: 1px;
+            position: relative;
+            top: -32px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+
+        <span class="Title">NSD</span>
+
+        <div class="navdiv">
+
+            <nav class="nav">
+                <ul class="navul">
+                    <li class="navli"><a class="navlink" href="">Home</a></li>
+                    <li class="navli"><a class="navlink" href="">Videos</a></li>
+                    <li class="navli"><a class="navlink" href="">Photos</a></li>
+                    <li class="navli"><a class="navlink" href="">Blog</a></li>
+                    <li class="navli"><a class="navlink" href="">About</a></li>
+                    <li class="navli"><button class="login">Login</button></li>
+                </ul>
+            </nav>
+
+        </div>
+        <hr class="darkhorizontalline">
+
+    </div>
+</body>
+
+</html>

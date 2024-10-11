@@ -1,0 +1,156 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing background-color</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #333333;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+</body>
+
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style for the navigation bar */
+        .navbar {
+            background-color: #333; /* Background color of the navbar */
+            overflow: hidden;
+        }
+
+        /* Style for the navigation bar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff; /* Text color of the links */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the color of links on hover */
+        .navbar a:hover {
+            background-color: #ddd; /* Background color of links on hover */
+            color: #333; /* Text color of links on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+</div>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <style>
+        .text-container {
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+        }
+
+        #text {
+            border-right: 2px solid #c31818;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: #d21e1e;
+            }
+        }
+    </style>
+
+    <script>
+        const textElement = document.getElementById('text');
+        const words = ['Hello', 'Welcome', 'CSS Typing Effect'];
+
+        let wordIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+            if (wordIndex === words.length) {
+                wordIndex = 0;
+            }
+
+            const word = words[wordIndex];
+            if (charIndex < word.length) {
+                textElement.textContent += word.charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 100); // Adjust typing speed (in milliseconds)
+            } else {
+                setTimeout(erase, 1000); // Display each word for 1 second
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                textElement.textContent = words[wordIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, 50); // Adjust erasing speed (in milliseconds)
+            } else {
+                wordIndex++;
+                setTimeout(type, 500); // Pause between words
+            }
+        }
+
+        type(); // Start the typing effect
+
+    </script>
+</head>
+
+<body>
+    <div class="text-container">
+        <span id="text"></span>
+    </div>
+
+</body>
+
+</html>

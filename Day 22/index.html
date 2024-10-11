@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing unti</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /** width: 1920px;**/
+            width: 80vw;
+            margin: auto;
+            background-color: aqua;
+            height: 10vh;
+
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /** width: 1920px;**/
+            width: 80vw;
+            margin: 23px auto;
+            /** font-size: 16px;**/
+            background-color: aqua;
+            /* height: 80vh;*/
+            min-height: 80vh;
+        }
+
+        .container p {
+            border: 2px solid wheat;
+            font-size: 2rem;
+            width: 50%;
+        }
+
+        .mycount {
+            border: 2px solid black;
+            margin: 23px auto;
+            box-sizing: border-box;
+            /*background-color: red;*/
+            color: black;
+            font-size: 22px;
+            /*width: 100vmin;*/
+            width: 80vw;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is box
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, beatae eos? Pariatur vel libero quia
+            nesciunt adipisci consequuntur perferendis! Numquam voluptas natus cupiditate inventore soluta eligendi
+            nesciunt aliquid consequuntur saepe. Quibusdam animi nesciunt aliquam id dolores officia deleniti,
+            dignissimos architecto explicabo, neque, ut in laboriosam dicta libero eligendi provident distinctio harum
+            omnis quisquam dolore aperiam recusandae!
+
+        </p>
+    </div>
+
+    <div class="mycount">
+        This is a another box
+    </div>
+</body>
+
+</html>
